@@ -1,4 +1,5 @@
-﻿using System;
+﻿using partialBlanco.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace partialBlanco
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnReservation_Click(object sender, EventArgs e)
+        {
+            Reservation registration = new Reservation(ref panelMain);
         }
     }
 }
